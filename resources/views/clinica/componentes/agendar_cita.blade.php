@@ -10,7 +10,7 @@
 
 <body>
 
-    <form action="{{ route(' ') }}" method="POST">
+    <form action="{{ route('consultas.store') }}" method="POST">
 
         @csrf
 
