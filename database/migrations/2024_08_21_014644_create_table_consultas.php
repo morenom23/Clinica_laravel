@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('consultas', function (Blueprint $table) {
             $table->id();
             $table->string('nombre')->nullable();
-            $table->integer('cedula')->nullable();
+            $table->integer('cedula');
             $table->string('telefono');
             $table->string('correo');
             $table->string('tipo_consulta');

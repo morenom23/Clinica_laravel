@@ -10,7 +10,7 @@
 
 <body>
 
-    <form action="{{ route('consultas.store') }}" method="POST">
+    <form action="{{ route('consulta.store') }}" method="POST">
 
         @csrf
 
@@ -30,13 +30,16 @@
         <input type="text" placeholder="seleccione la consulta" name="tipo_consulta">
 
         <label for="">seleccione fecha</label>
-        <input type="date" name="fecha">
+        <input type="date" name="fecha_consulta">
+
+        <label for="">Medico asignado</label>
+        <input type="text" name="medico_asignado">
 
         <input type="submit" value="Agendar">
 
 
     </form>
-
+    @include('sweetalert::alert')
 </body>
 
 </html>

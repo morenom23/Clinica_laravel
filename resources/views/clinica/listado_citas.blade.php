@@ -1,4 +1,6 @@
-<p>Ver el listado de las citas</p>
+<center>
+    <p> LISTADO DE CITAS GENERADAS</p>
+</center>
 
 <table>
     <tr>
@@ -15,7 +17,7 @@
 
     @foreach ($consultas as $consultas)
         <tr>
-            <form action="{{ route('consultas.update', ['id' => $consultas->id]) }}" method="POST">
+            <form action="{{ route('consulta.update', ['id' => $consultas->id]) }}" method="POST">
 
                 @csrf
                 @method('put')
@@ -29,7 +31,7 @@
                 <td><input type="text" value="{{ $consultas->created_at }}"></td>
                 <td><input type="text" value="{{ $consultas->updated_at }}"></td>
                 <td><input type="submit" value="Actualizar"></td>
-                <td><a href="{{ route('consultas.edit', ['id' => $consultas->id]) }}" target="blank">Ver registro</a>
+                <td><a href="{{ route('consulta.edit', ['id' => $consultas->id]) }}" target="blank">Ver registro</a>
                 </td>
             </form>
         </tr>

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\consultas;
 //use App\Models\estudiantes;
-use App\resources\consultas\Manager;
+use App\Resources\consultas\Manager;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
 
@@ -35,7 +35,7 @@ class consultas_controller extends Controller
     {
 
         $consultas = consultas::find($id);
-        return view('consultas.edit')
+        return view('editar_cita')
             ->with('consultas', $consultas);
     }
 
@@ -43,35 +43,32 @@ class consultas_controller extends Controller
     {
 
         if ($this->manager->eliminarConsulta($id)) {
-            Alert::success("El estudiante fue eliminado exitosamente");
+            Alert::success("La consulta fue eliminada exitosamente");
             return redirect()->route("consulta.index");
         } else {
-            Alert::error("El registro no pudo ser eliminado");
+            Alert::error("La consulta no pudo ser eliminada");
             return redirect()->back();
         }
     }
 
-
-
-
     public function index() //listo
     {
-        return view("consultas.index")
-            ->with("consultas", $this->manager->listarRegistros());
+        return view("clinica.listado_citas")
+            ->with("consultas", $this->manager->listarConsultas());
     }
 
     public function create()
     {
-        return view("consultas.create");
+        return view('agendar_cita');
     }
 
     public function store(Request $request)
     {
 
         if ($this->manager->crearConsulta($request)) {
-            Alert::success("Se creó el estudiante exitosamente");
+            Alert::success("Se creó la consulta exitosamente");
         } else {
-            Alert::error("No se pudo crear el estudiante");
+            Alert::error("No se pudo crear la consulta");
         }
         return redirect()->back();
     }
