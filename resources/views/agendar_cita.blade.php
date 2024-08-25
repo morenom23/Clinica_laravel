@@ -22,27 +22,27 @@
 
             <div class="inputs">
                 <label for="">Nombre</label>
-                <input type="text" placeholder="Ingrese el nombre" name="nombre">
+                <input type="text" placeholder="Ingrese el nombre" name="nombre" required>
             </div>
 
             <div class="inputs">
                 <label for="">Cedula</label>
-                <input type="number" placeholder="Ingrese su documento" name="cedula">
+                <input type="number" placeholder="Ingrese su documento" name="cedula" required>
             </div>
 
             <div class="inputs">
                 <label for="">Telefono</label>
-                <input type="text" placeholder="Ingrese su telefono" name="telefono">
+                <input type="text" placeholder="Ingrese su telefono" name="telefono" required>
             </div>
 
             <div class="inputs">
                 <label for="">Correo</label>
-                <input type="email" placeholder="Ingrese su email" name="correo">
+                <input type="email" placeholder="Ingrese su email" name="correo" required>
             </div>
 
             <div class="inputs">
                 <label for="">Tipo consulta</label>
-                <select name="tipo_consulta">
+                <select name="tipo_consulta" required>
                     <option value="">Seleccione</option>
                     <option value="Odontologia">Odontologia</option>
                     <option value="Medicina General">Medicina General</option>
@@ -54,12 +54,12 @@
 
             <div class="inputs">
                 <label for="">Seleccione una fecha</label>
-                <input type="date" name="fecha_consulta">
+                <input type="date" name="fecha_consulta" required>
             </div>
 
             <div class="inputs">
                 <label for="">Medico asignado</label>
-                <select name="medico_asignado">
+                <select name="medico_asignado" required>
                     <option value="">Seleccione</option>
                     <option value="Daniel Jaramillo">Daniel Jaramillo</option>
                     <option value="Julieth Alzate">Julieth Alzate</option>

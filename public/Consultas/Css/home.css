@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    /* background-image: url('http://127.0.0.1:8000/imagenes/clinicaimg.png'); */
+    background-image: url('http://127.0.0.1:8000/imagenes/fondo-home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+
+}
+
+.container-home {
+    /* border: 1px solid green; */
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -30px;
+
+}
+
+.nav {
+    padding: 10px;
+    display: flex;
+
+}
+
+.nav p {
+    font-size: 35px;
+    color: #18727e;
+    font-weight: bold;
+    line-height: 1;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+.nav img {
+    width: 50px;
+    height: 50px;
+    margin-left: -35px;
+    margin-top: 25px;
+}
+
+.container-home h1 {
+    color: #18727e;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: -20px;
+
+}
+
+.login-clinica {
+    /* margin: 10px; */
+    font-size: 19px;
+    font-weight: 600;
+    font-weight: bold;
+    /* background-color: rgb(12, 158, 177); */
+    padding: 4px 10px;
+    border-radius: 5px;
+    /* color: white; */
+
+}
+
+.log-reg {
+    background-color: rgb(237, 240, 243);
+    width: 190px;
+    float: right;
+    border-radius: 5px;
+    float: bottom none;
+}
+
+
+
+.login-registro {
+    color: #18727e;
+    text-align: end;
+    padding: 20px 30px;
+    font-size: 18px;
+}
+
+.cuerpo {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.cuerpo .horarios {
+    font-size: 22px;
+    float: none;
+}
+
+
+.tex-cuerpo {
+    width: 50%;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    color: gray;
+}

@@ -76,7 +76,7 @@ input {
 
 select {
     padding: 5px 10px;
-
+    color: rgb(85, 85, 85);
 }
 
 option {

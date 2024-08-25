@@ -70,6 +70,6 @@ class consultas_controller extends Controller
         } else {
             Alert::error("No se pudo crear la consulta");
         }
-        return redirect()->back();
+        return redirect()->route('consulta.index');
     }
 }
