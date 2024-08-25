@@ -69,7 +69,9 @@
             </div>
 
             <div class="boton">
-                <input type="submit" value="Agendar" class="">
+
+                <input type="submit" value="Agendar">
+
             </div>
 
         </form>

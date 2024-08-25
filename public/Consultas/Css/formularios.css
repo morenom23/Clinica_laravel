@@ -6,17 +6,16 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url('');
-}
+body {}
 
 h1 {
-    margin: 20px 0px 50px 0px;
+    margin: 20px 0px 40px 0px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: #18727e;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 20px;
 }
 
 .contenedor_form {
@@ -28,7 +27,6 @@ h1 {
 
 .cont_imagen {
     width: 300px;
-
 
 }
 
@@ -47,10 +45,11 @@ form {
     flex-wrap: wrap;
     padding: 20px 10px;
     justify-content: center;
+    text-align: center;
     align-items: center;
     border-radius: 15px;
     font-family: "Poppins", sans-serif;
-    color: white;
+
 
 }
 
@@ -66,6 +65,7 @@ label {
     font-size: 19px;
     text-align: center;
     font-weight: bold;
+    color: white;
 }
 
 input {
@@ -76,10 +76,12 @@ input {
 
 select {
     padding: 5px 10px;
+
 }
 
 option {
     text-transform: uppercase;
+
 }
 
 input[type="date"] {
@@ -87,13 +89,117 @@ input[type="date"] {
 }
 
 .boton input {
-    padding: 7px 20px;
+    padding: 5px 20px;
     font-size: 18px;
     color: #18727e;
     border: none;
     background-color: white;
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
     font-weight: bold;
+}
+
+/* ESTILOS LISTADO DE CONSULTAS --------------------- */
+
+.tabla_consultas table {
+
+    background-color: #18727e;
+    border-collapse: collapse;
+    width: max-content;
+
+}
+
+.tabla_consultas {
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+th {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 500;
+
+}
+
+.tabla_consultas input {
+    width: 129px;
+    margin-right: 2px;
+}
+
+.accion {
+    margin-left: 50px;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav p {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: .05;
+    color: #18727e;
+}
+
+.nav p img {
+    width: 50px;
+    margin-bottom: -10px;
+    margin-top: 5px;
+
+}
+
+.nav h1 {
+    margin-left: 350px;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+a {
+    color: white;
+    padding: 0px 8px;
+    font-size: 18px;
+}
+
+/* EDITAR CONSULTAS ------------- */
+
+.eliminar-registro {
+
+    margin-top: 20px;
+    display: block;
+    display: flex;
+    height: 50px;
+    width: 30%;
+    margin-left: 80px;
+    border-radius: 0px;
+    background-color: white;
+
+}
+
+.eliminar-registro label {
+    color: #18727e;
+}
+
+.boton-eliminar {
+    margin-left: 15px;
+    padding: 5px 20px;
+    background-color: #18727e;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: -180px;
 }
