@@ -1,0 +1,11 @@
+
+Proyecto final clinica_Laravel del grupo 12
+
+Integrantes :
+
+* Merly Martinez
+* Daniel Jaramillo 
+* Julieth Alzate
+* Ezequiel Moreno
+
+
