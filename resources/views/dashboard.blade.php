@@ -8,15 +8,13 @@
     <title>Agendar cita</title>
     <link rel="icon" type="image/png" href="{{ asset('imagenes/favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('Consultas/Css/formularios.css') }}">
-    {{-- <link rel="stylesheet" href="{{ asset('Consultas/Css/logos.css') }}"> --}}
+
 </head>
 
 <body>
     {{-- <div class="logo-dasboard">
         <img src="{{ asset('imagenes/logo_clinica.png') }}" alt="">
     </div> --}}
-
-    @include('nav')
 
     <x-app-layout>
 

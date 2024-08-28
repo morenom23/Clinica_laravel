@@ -41,7 +41,7 @@
             </div>
 
             <div class="inputs">
-                <label for="">Tipo consulta</label>
+                <label for="">Tipo de consulta</label>
                 <select name="tipo_consulta" required class="sele_medico">
                     <option value="">Seleccione</option>
                     <option value="Odontologia">Odontologia</option>
