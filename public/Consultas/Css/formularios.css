@@ -79,6 +79,13 @@ select {
     color: rgb(85, 85, 85);
 }
 
+.sele_medico{
+    width: 200px;
+}
+
+.input-fecha{
+    padding: 5px;
+}
 option {
     text-transform: uppercase;
 
@@ -203,3 +210,10 @@ a {
     cursor: pointer;
     margin-left: -180px;
 }
+
+.btn-actualizar{
+    cursor: pointer;
+}
+
+/* ESTILOS DEL LOGO PARA EL LOGIN Y REGISTER */
+

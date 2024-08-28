@@ -10,9 +10,11 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+    <!-- Styles -->
+    <link rel="icon" type="image/png" href="{{ asset('imagenes/favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('Consultas/Css/home.css') }}">
 
-    <!-- Styles -->
+
     <style>
         /* ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com */
         *,
@@ -939,7 +941,7 @@
                 <span>Web</span>
 
             </p>
-            <img src="{{ asset('http://127.0.0.1:8000/imagenes/logo_clinica.png') }}" alt="">
+            <img src="{{ asset('imagenes/logo_clinica.png') }}" alt="">
         </div>
 
         <center>
@@ -958,7 +960,6 @@
             </p>
 
         </div>
-
 
     </div>
 

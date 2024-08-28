@@ -16,7 +16,6 @@ Route::get('/dashboard', function () {
 
 Route::middleware('auth')->group(function () {
 
-
     Route::get('consulta/create', 'App\Http\Controllers\consultas_controller@Create')->name('consulta.create');
     Route::post('consulta/store', 'App\Http\Controllers\consultas_controller@store')->name('consulta.store');
     Route::get('consulta/index', 'App\Http\Controllers\consultas_controller@index')->name('consulta.index');

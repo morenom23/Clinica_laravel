@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Agendar cita</title>
+    <link rel="icon" type="image/png" href="{{ asset('imagenes/favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('Consultas/Css/formularios.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('Consultas/Css/logos.css') }}"> --}}
 </head>
 
 <body>
+    {{-- <div class="logo-dasboard">
+        <img src="{{ asset('imagenes/logo_clinica.png') }}" alt="">
+    </div> --}}
+
+    @include('nav')
+
     <x-app-layout>
-        {{-- <x-slot name="header">
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                {{ __('Dashboard') }}
-            </h2>
-        </x-slot> --}}
+
         <div class="agendar_cita">
             @include('agendar_cita')
         </div>

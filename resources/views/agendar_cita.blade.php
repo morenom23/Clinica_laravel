@@ -42,7 +42,7 @@
 
             <div class="inputs">
                 <label for="">Tipo consulta</label>
-                <select name="tipo_consulta" required>
+                <select name="tipo_consulta" required class="sele_medico">
                     <option value="">Seleccione</option>
                     <option value="Odontologia">Odontologia</option>
                     <option value="Medicina General">Medicina General</option>
@@ -54,12 +54,12 @@
 
             <div class="inputs">
                 <label for="">Seleccione una fecha</label>
-                <input type="date" name="fecha_consulta" required>
+                <input type="date" name="fecha_consulta" required class="input-fecha">
             </div>
 
             <div class="inputs">
-                <label for="">Medico asignado</label>
-                <select name="medico_asignado" required>
+                <label for="">Médico disponible</label>
+                <select name="medico_asignado" required class="sele_medico">
                     <option value="">Seleccione</option>
                     <option value="Daniel Jaramillo">Daniel Jaramillo</option>
                     <option value="Julieth Alzate">Julieth Alzate</option>

@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Editar consulta</title>
+    <link rel="icon" type="image/png" href="{{ asset('imagenes/favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('Consultas/Css/formularios.css') }}">
 </head>
 
 <body>
 
     <div class="nav">
-        <h1>EDITAR CONSULTAS</h1>
+        <h1>EDITAR CONSULTA</h1>
         <p>Clinica <br>
             <span>Web</span>
-            <img src="{{ asset('http://127.0.0.1:8000/imagenes/logo_clinica.png') }}" alt="">
+            <img src="{{ asset('imagenes/logo_clinica.png') }}" alt="">
         </p>
     </div>
 
@@ -53,7 +54,7 @@
                 <td><input type="date" name="fecha_consulta" value="{{ $consultas->fecha_consulta }}"></td>
                 <td><input type="text" name="medico_asignado" value="{{ $consultas->medico_asignado }}"></td>
                 <td><input type="text" value="{{ $consultas->updated_at }}"></td>
-                <td><input type="submit" value="Actualizar"></td>
+                <td><input type="submit" value="Actualizar" class="btn-actualizar"></td>
                 <td><a href="{{ route('consulta.edit', ['id' => $consultas->id]) }}" target="blank">Ver registro</a>
                 </td>
             </form>
