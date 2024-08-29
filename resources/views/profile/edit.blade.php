@@ -1,3 +1,5 @@
+<title>Perfil</title>
+<link rel="icon" type="image/png" href="{{ asset('imagenes/favicon.png') }}">
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">

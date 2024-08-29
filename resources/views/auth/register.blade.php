@@ -1,3 +1,5 @@
+<title>Clinica web</title>
+
 <link rel="icon" type="image/png" href="{{ asset('imagenes/favicon.png') }}">
 <link rel="stylesheet" href="{{ asset('Consultas/Css/logos.css') }}">
 <center>
