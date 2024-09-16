@@ -49,7 +49,7 @@ form {
     align-items: center;
     border-radius: 15px;
     font-family: "Poppins", sans-serif;
-
+    /* display: none; */
 
 }
 
@@ -106,6 +106,69 @@ input[type="date"] {
     margin-top: 30px;
     margin-left: 10px;
     font-weight: bold;
+}
+
+/* Consulta generada exitosamente -------------------- */
+.consulta-exitosa{
+    background-color: #18727e;
+    width: 45%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    animation: boxConsulta 0.5s ease-in-out;
+    display: none;
+    
+}
+.consulta-exitosa p{
+    color: rgb(240, 237, 237);
+    font-size: 22px;
+
+}
+
+.consulta-exitosa img{
+    width: 50px;
+    margin: 15px 0px 30px 0px;
+    animation: paloma 0.7s ease-in-out;
+}
+.consulta-exitosa .a-consulta-generada{
+    margin-top: 20px;
+}
+.consulta-exitosa .a-consulta-generada a{
+    color: #18727e;
+    text-decoration: none;
+    background-color: rgb(236, 235, 235);
+    font-size: 15px;
+    margin: 0px 20px;
+    padding: 2px 10px;
+    border-radius:5px;
+}
+.a-consulta-generada a:hover{
+    color: #064f58;
+}
+
+#cita_generada{
+    display: none;
+}
+
+/* FORMULARIO DESLOGUEAR-------------- */
+
+.salir{
+    background-color: transparent;
+    margin-top: -10px;
+    height: 50px;
+    width: 100%;
+    border-radius: 0px;
+    text-align: left;
+    padding: 0px;
+}
+.box-perfil{
+    padding-left: 18px;
+    width: 100%;
 }
 
 /* ESTILOS LISTADO DE CONSULTAS --------------------- */
@@ -192,7 +255,7 @@ a {
     margin-left: 80px;
     border-radius: 0px;
     background-color: white;
-
+    
 }
 
 .eliminar-registro label {
@@ -217,3 +280,23 @@ a {
 
 /* ESTILOS DEL LOGO PARA EL LOGIN Y REGISTER */
 
+@keyframes boxConsulta{
+    0%{
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes paloma {
+    0%{
+        margin-right: 200%;
+        opacity: 0;
+    }
+    100%{
+        margin-right: 0;
+        opacity: 1;
+    }
+}

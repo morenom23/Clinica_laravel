@@ -66,10 +66,13 @@ class consultas_controller extends Controller
     {
 
         if ($this->manager->crearConsulta($request)) {
-            Alert::success("Se creó la consulta exitosamente");
+            Alert::success("Se generó la cita exitosamente");
+        
         } else {
-            Alert::error("No se pudo crear la consulta");
+            Alert::error("No se pudo crear la cita");
+
         }
-        return redirect()->route('consulta.index');
+        return redirect()->back();
+        
     }
 }

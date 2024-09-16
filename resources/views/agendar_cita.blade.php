@@ -15,8 +15,9 @@
         <h1>En este espacio agenda tu cita</h1>
     </center>
 
+
     <div class="contenedor_form">
-        <form action="{{ route('consulta.store') }}" method="POST">
+        <form action="{{ route('consulta.store') }}" method="POST" id="form-citas">
 
             @csrf
 
@@ -70,19 +71,35 @@
 
             <div class="boton">
 
-                <input type="submit" value="Agendar">
+                <input type="submit" value="Agendar" onclick="">
 
             </div>
 
         </form>
 
+        {{-- Consulta generada exitosamente --}}
+
+        <div class="consulta-exitosa" id="consulta-exitosa">
+            <div class="con-consulta">
+                <p>Consulta generada exitosamente</p>
+            </div>
+            <img src="{{ asset('imagenes/palomita.png') }}" alt="imagen paloma consulta">
+
+            <div class="a-consulta-generada">
+                <a href="">Generar nueva cita</a>
+                <a href="">Ver cita generada</a>
+            </div>
+        </div>
+
         <div class="cont_imagen">
-            <img src="http://127.0.0.1:8000/imagenes/clinicaimg.png">
+            <img src="{{ asset('imagenes/clinicaimg.png') }}">
         </div>
     </div>
 
 
     @include('sweetalert::alert')
+
+    {{-- <script src="{{ asset('Consultas/js/script.js') }}"></script> --}}
 
 </body>
 

@@ -20,7 +20,9 @@
     <h1>CONSULTAS GENERADAS</h1>
     <p>Clinica <br>
         <span>Web</span>
-        <img src="{{ asset('imagenes/logo_clinica.png') }}" alt="">
+        <a href="{{ asset("dashboard") }}">
+            <img src="{{ asset('imagenes/logo_clinica.png') }}" alt="">
+        </a>
     </p>
 </div>
 
